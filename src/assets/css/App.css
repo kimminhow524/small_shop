@@ -1,3 +1,10 @@
+.main-bg {
+  height: 300px;
+  background-image: url("../img/bgImage.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +14,13 @@
   pointer-events: none;
 }
 
+.start {
+  opacity: 0;
+}
+.end {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
